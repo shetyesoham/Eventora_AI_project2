@@ -1,10 +1,11 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ConfigDict
 from typing import Optional, List, Dict, Any
 from datetime import date, time, datetime
 from uuid import UUID
 
 # Profile Schemas
 class ProfileBase(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
     email: str
     full_name: str
     avatar_url: Optional[str] = None
@@ -21,9 +22,6 @@ class ProfileResponse(ProfileBase):
     id: UUID
     created_at: datetime
     updated_at: datetime
-
-    class Config:
-        from_attributes = True
 
 # Event Schemas
 class EventBase(BaseModel):

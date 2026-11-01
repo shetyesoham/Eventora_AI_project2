@@ -7,8 +7,8 @@ import { EventItem } from "@/types";
 import { formatCurrency } from "@/lib/utils";
 import Link from "next/link";
 import { 
-  Calendar, Plus, MapPin, Users, Wallet, ArrowRight, 
-  Sparkles, X, CheckCircle2, ChevronRight, ChevronLeft, Globe, Utensils
+  Calendar, Plus, MapPin, Users, ArrowRight, 
+  Sparkles, X, ChevronRight, ChevronLeft, Globe, Utensils
 } from "lucide-react";
 
 export default function MyEventsPage() {

@@ -3,18 +3,16 @@
 import { useEffect, useState } from "react";
 import { AppShell } from "@/components/layout/AppShell";
 import { apiService } from "@/services/api";
-import { EventItem, Vendor, TaskItem } from "@/types";
+import { Vendor } from "@/types";
 import { useEvent } from "@/context/EventContext";
 import { 
-  Smartphone, Phone, MapPin, CheckCircle2, 
-  AlertOctagon, Clock, ShieldCheck, UserCheck, X, Check, AlertTriangle, Send
+  Phone, MapPin, 
+  AlertOctagon, Clock, ShieldCheck, X, Check, Send
 } from "lucide-react";
 
 export default function EventDayPage() {
   const { currentEventId, currentEvent } = useEvent();
   const [vendors, setVendors] = useState<Vendor[]>([]);
-  const [tasks, setTasks] = useState<TaskItem[]>([]);
-  const [loading, setLoading] = useState(true);
 
   // Modals
   const [isBackupModalOpen, setIsBackupModalOpen] = useState(false);

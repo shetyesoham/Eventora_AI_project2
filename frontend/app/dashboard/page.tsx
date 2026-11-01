@@ -8,8 +8,8 @@ import { formatCurrency } from "@/lib/utils";
 import { useEvent } from "@/context/EventContext";
 import Link from "next/link";
 import { 
-  Sparkles, Calendar, Users, Wallet, CheckCircle2, 
-  Store, AlertTriangle, ArrowUpRight, TrendingUp, Clock
+  Sparkles, Users, Wallet, CheckCircle2, 
+  Store, AlertTriangle, ArrowUpRight, TrendingUp
 } from "lucide-react";
 
 export default function DashboardPage() {

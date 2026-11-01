@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AppShell } from "@/components/layout/AppShell";
-import { Users, DollarSign, Award, CheckSquare, Heart, Shield, Plus, Sparkles, X, Check, Phone, Clock, FileCheck, Trash2 } from "lucide-react";
+import { Users, Award, Shield, Plus, X, Check, Trash2 } from "lucide-react";
 import { formatCurrency } from "@/lib/utils";
 
 interface Volunteer {

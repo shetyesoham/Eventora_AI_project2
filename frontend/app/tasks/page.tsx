@@ -5,7 +5,7 @@ import { AppShell } from "@/components/layout/AppShell";
 import { apiService } from "@/services/api";
 import { TaskItem } from "@/types";
 import { useEvent } from "@/context/EventContext";
-import { CheckSquare, Plus, Calendar, Clock, CheckCircle2, User, X, Check } from "lucide-react";
+import { CheckSquare, Plus, CheckCircle2, X, Check } from "lucide-react";
 
 export default function TasksPage() {
   const { currentEventId, currentEvent } = useEvent();

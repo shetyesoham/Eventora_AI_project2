@@ -7,7 +7,7 @@ import { formatCurrency } from "@/lib/utils";
 import { Expense } from "@/types";
 import { useEvent } from "@/context/EventContext";
 import { 
-  Calculator, Sparkles, Plus, TrendingDown, TrendingUp, AlertCircle, X, Check 
+  Calculator, Sparkles, Plus, X, Check 
 } from "lucide-react";
 
 export default function BudgetPage() {

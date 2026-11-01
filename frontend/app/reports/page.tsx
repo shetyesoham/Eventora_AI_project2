@@ -6,25 +6,23 @@ import { apiService } from "@/services/api";
 import { EventItem } from "@/types";
 import { formatCurrency } from "@/lib/utils";
 import { useEvent } from "@/context/EventContext";
-import { BarChart3, Download, FileText, CheckCircle2, TrendingUp, Users, Store, Loader2 } from "lucide-react";
+import { Download, Loader2 } from "lucide-react";
 
 export default function ReportsPage() {
   const { currentEventId, currentEvent } = useEvent();
   const [budget, setBudget] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
   const [isDownloading, setIsDownloading] = useState(false);
 
   useEffect(() => {
     async function loadReport() {
       if (!currentEventId) return;
-      setLoading(true);
       try {
         const b = await apiService.getBudget(currentEventId);
         setBudget(b);
       } catch (err) {
         console.error(err);
       } finally {
-        setLoading(false);
+        // loaded
       }
     }
     loadReport();

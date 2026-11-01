@@ -5,7 +5,7 @@ import { AppShell } from "@/components/layout/AppShell";
 import { apiService } from "@/services/api";
 import { RiskItem } from "@/types";
 import { useEvent } from "@/context/EventContext";
-import { ShieldAlert, Plus, CloudRain, AlertTriangle, CheckCircle, ShieldCheck, X, Check, Trash2 } from "lucide-react";
+import { ShieldAlert, Plus, ShieldCheck, X, Check, Trash2 } from "lucide-react";
 
 export default function RisksPage() {
   const { currentEventId, currentEvent } = useEvent();

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Sparkles, Calendar, Heart, ShieldCheck, CheckCircle2, ArrowRight, Star, Users, Music, UtensilsCrossed } from "lucide-react";
+import { Sparkles, Heart, ArrowRight, Star, Users, Music } from "lucide-react";
 
 export default function LandingPage() {
   const categories = [
