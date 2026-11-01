@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Search, Bell, Sparkles, User, ChevronDown, CalendarDays, LogOut, Home, Settings } from "lucide-react";
+import { Search, Bell, Sparkles, ChevronDown, CalendarDays, LogOut, Home, Settings } from "lucide-react";
 import { useEvent } from "@/context/EventContext";
 
 interface TopNavProps {
@@ -12,7 +12,7 @@ interface TopNavProps {
 
 export function TopNav({ onToggleSidebar }: TopNavProps) {
   const router = useRouter();
-  const { currentEventId, currentEvent, eventsList, setCurrentEventId } = useEvent();
+  const { currentEventId, eventsList, setCurrentEventId } = useEvent();
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 

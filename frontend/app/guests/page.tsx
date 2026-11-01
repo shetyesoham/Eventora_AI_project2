@@ -5,12 +5,11 @@ import { AppShell } from "@/components/layout/AppShell";
 import { apiService } from "@/services/api";
 import { Guest } from "@/types";
 import { useEvent } from "@/context/EventContext";
-import { Users, Mail, Phone, Plus, Share2, Sparkles, Check, Clock, X, UserPlus } from "lucide-react";
+import { Plus, Share2, Check, Clock, X, UserPlus } from "lucide-react";
 
 export default function GuestsPage() {
   const { currentEventId, currentEvent } = useEvent();
   const [guests, setGuests] = useState<Guest[]>([]);
-  const [loading, setLoading] = useState(true);
   const [inviteModal, setInviteModal] = useState<Guest | null>(null);
 
   // Add Guest Modal State
@@ -19,10 +18,8 @@ export default function GuestsPage() {
   const [name, setName] = useState("");
   const [groupName, setGroupName] = useState("Immediate Family");
   const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
   const [rsvpStatus, setRsvpStatus] = useState<any>("Confirmed");
   const [dietary, setDietary] = useState("Vegetarian");
-  const [plusOnes, setPlusOnes] = useState(1);
   const [tableAssigned, setTableAssigned] = useState("Table 1 (VIP)");
 
   async function loadGuests() {

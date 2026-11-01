@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { AppShell } from "@/components/layout/AppShell";
 import { apiService } from "@/services/api";
-import { EventItem } from "@/types";
 import { formatCurrency } from "@/lib/utils";
 import { useEvent } from "@/context/EventContext";
 import { Download, Loader2 } from "lucide-react";

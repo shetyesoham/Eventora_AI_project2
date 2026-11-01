@@ -13,7 +13,6 @@ import {
 
 export default function MyEventsPage() {
   const [events, setEvents] = useState<EventItem[]>([]);
-  const [loading, setLoading] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
@@ -46,7 +45,7 @@ export default function MyEventsPage() {
     } catch (e) {
       console.error(e);
     } finally {
-      setLoading(false);
+      // loaded
     }
   }
 

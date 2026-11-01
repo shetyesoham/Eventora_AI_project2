@@ -4,7 +4,7 @@ import { useState } from "react";
 import { AppShell } from "@/components/layout/AppShell";
 import { apiService, DEMO_EVENT_ID } from "@/services/api";
 import { ChatMessage } from "@/types";
-import { Sparkles, Send, Mic, RefreshCw, Bot, User, CheckCircle2 } from "lucide-react";
+import { Sparkles, Send, Mic, RefreshCw, Bot, User } from "lucide-react";
 
 export default function CopilotPage() {
   const [messages, setMessages] = useState<ChatMessage[]>([

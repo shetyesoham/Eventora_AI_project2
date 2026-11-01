@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { AppShell } from "@/components/layout/AppShell";
 import { useEvent } from "@/context/EventContext";
-import { Settings, User, Bell, Shield, Key, Sparkles, Check, Globe } from "lucide-react";
+import { Bell, Sparkles, Check, Globe } from "lucide-react";
 
 export default function SettingsPage() {
   const { currentEvent } = useEvent();

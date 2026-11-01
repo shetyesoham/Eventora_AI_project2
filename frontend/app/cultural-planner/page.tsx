@@ -5,18 +5,16 @@ import { AppShell } from "@/components/layout/AppShell";
 import { apiService, getFallbackCeremonies } from "@/services/api";
 import { CeremonyItem } from "@/types";
 import { useEvent } from "@/context/EventContext";
-import { Sparkles, Palette, Utensils, ShoppingBag, Music, Clock, Globe } from "lucide-react";
+import { Sparkles, Utensils, ShoppingBag, Clock, Globe } from "lucide-react";
 
 export default function CulturalPlannerPage() {
   const { currentEventId, currentEvent } = useEvent();
   const [ceremonies, setCeremonies] = useState<CeremonyItem[]>([]);
   const [activeTab, setActiveTab] = useState<"ceremonies" | "menu" | "shopping" | "moodboard">("ceremonies");
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadCeremonies() {
       if (!currentEventId) return;
-      setLoading(true);
       try {
         const c = await apiService.getCeremonies(currentEventId);
         if (c && c.length > 0) {
@@ -31,7 +29,7 @@ export default function CulturalPlannerPage() {
         const regional = getFallbackCeremonies(currentEvent?.cultural_background || "Hindu Maharashtrian", currentEvent?.venue);
         setCeremonies(regional);
       } finally {
-        setLoading(false);
+        // loaded
       }
     }
     loadCeremonies();

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { AppShell } from "@/components/layout/AppShell";
-import { HelpCircle, Mail, MessageSquare, Phone, Sparkles, BookOpen, ChevronDown, Check } from "lucide-react";
+import { Mail, Phone, Sparkles, BookOpen, ChevronDown } from "lucide-react";
 
 export default function SupportPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(0);

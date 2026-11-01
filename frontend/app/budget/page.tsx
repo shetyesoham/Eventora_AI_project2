@@ -32,7 +32,7 @@ export default function BudgetPage() {
   const [simCateringCost, setSimCateringCost] = useState(1200);
   const [simVenue, setSimVenue] = useState(300000);
   const [simDecor, setSimDecor] = useState(150000);
-  const [simOther, setSimOther] = useState(100000);
+  const [simOther] = useState(100000);
   const [simResult, setSimResult] = useState<any>(null);
 
   async function fetchBudgetData() {

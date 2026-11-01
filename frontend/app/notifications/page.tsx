@@ -5,7 +5,7 @@ import { AppShell } from "@/components/layout/AppShell";
 import { useEvent } from "@/context/EventContext";
 import { 
   Bell, CheckCircle2, AlertTriangle, Clock, 
-  Calendar, Store, ShieldAlert, Sparkles, Trash2, CheckCheck
+  Trash2, CheckCheck
 } from "lucide-react";
 
 interface NotificationItem {
