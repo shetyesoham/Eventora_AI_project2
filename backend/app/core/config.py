@@ -26,9 +26,10 @@ class Settings(BaseSettings):
         "https://*.vercel.app"
     ]
 
-    class Config:
-        env_file = ".env"
-        extra = "allow"
+    model_config = {
+        "env_file": ".env",
+        "extra": "allow"
+    }
 
 settings = Settings()
 
