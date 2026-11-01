@@ -144,7 +144,7 @@ export default function EventDayPage() {
         {/* Real-time Ceremony Timeline */}
         <div className="bg-white p-6 rounded-3xl border border-[#EEE7F3] shadow-xs space-y-4">
           <div className="flex items-center justify-between">
-            <h3 className="font-serif text-lg font-bold text-[#54265F]">Today's Ceremony Schedule</h3>
+            <h3 className="font-serif text-lg font-bold text-[#54265F]">Today&apos;s Ceremony Schedule</h3>
             <span className="text-[10px] text-gray-400">Tap status to update</span>
           </div>
           <div className="space-y-3">
